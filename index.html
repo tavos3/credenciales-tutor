@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Credencial tutor</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/icono.png.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-t-50 p-b-90">
+				<form name="consulta1" method="POST" action="template/credencial.php" class="login100-form validate-form flex-sb flex-w">
+					<span class="login100-form-title p-b-51">
+						Credencial COLMEX Tutores y Padres de familia
+					</span>
+					<div class="wrap-input100 validate-input m-b-16" pattern="[A-Za-z0-9.]" data-validate = "matricula">
+						<input class="input100" type="text" onkeyup="mayus(this);" name="ematricula" placeholder="Insertar matrícula del Alumno"required>
+						<span class="focus-input100"></span>
+					</div>
+					<p class="login-box-msg" style="color: red"><strong>*¡Importante colocar tu nombre como se muestra en tu INE empezando por apellidos seguido del nombre!</strong></p>
+					<p class="login-box-msg" style="color:  #e86d22"><strong>*¡Colocar nombre sin caracteres especiales ('´,.-$Ñ)!</strong></p><br><br>
+					<div class="wrap-input100 validate-input m-b-16" pattern="[A-Za-z0-9.]" data-validate = "nombre">
+						<input class="input100" type="text" onkeyup="mayus(this);" name="ename" placeholder="Insertar nombre de Padre o Tutor"required>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="container-login100-form-btn ">
+						<button type="submit" class="login100-form-btn" target="_blank">
+							generar
+						</button>
+					</div>
+
+				</form>
+				<script>function mayus(e) {
+					e.value = e.value.toUpperCase();
+					}
+			</script>
+			</div>
+		</div>
+	</div>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
